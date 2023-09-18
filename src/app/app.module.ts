@@ -12,6 +12,13 @@ import { HomeComponent } from './core/ui/home/home.component';
 import { LoaderComponent } from './core/ui/loader/loader.component';
 import { MenuComponent } from './core/ui/menu/menu.component';
 import { NotFoundComponent } from './core/ui/not-found/not-found.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
+import { LearningMaterialsComponent } from './pages/learning-materials/learning-materials.component';
+import { ServicesComponent } from './pages/services/services.component';
+import { OnlineLearningComponent } from './pages/online-learning/online-learning.component';
+import { FaIconLibrary, FontAwesomeModule } from "@fortawesome/angular-fontawesome";
+import { fas } from "@fortawesome/free-solid-svg-icons";
+import { far } from "@fortawesome/free-regular-svg-icons";
 
 @NgModule({
   declarations: [
@@ -24,13 +31,23 @@ import { NotFoundComponent } from './core/ui/not-found/not-found.component';
     HomeComponent,
     LoaderComponent,
     MenuComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    AboutUsComponent,
+    LearningMaterialsComponent,
+    ServicesComponent,
+    OnlineLearningComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+
+export class AppModule {
+  constructor(fasLibrary: FaIconLibrary) {
+    fasLibrary.addIconPacks(fas, far);
+  }
+}
