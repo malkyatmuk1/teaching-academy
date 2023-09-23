@@ -1,0 +1,118 @@
+.col-item {
+  margin-bottom: 30px;
+}
+
+.mast-widget {
+  background-color: #1d3557;
+  margin: 30px auto 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  height: 100%;
+  transform: scale(1);
+  transition: 2s ease transform;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  .w-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    height: 100%;
+    border-radius: 10px;
+    min-height: 260px;
+    color: #fff;
+    padding-bottom: 20px;
+    .icon-sec {
+      display: block;
+      flex-grow: 1;
+      margin: 75px auto 25px auto;
+      width: 90px;
+      transition: 0.35s;
+      color: #fff;
+      //padding: 30px 0;
+    }
+    .text-sec {
+      display: block;
+      font-size: 20px;
+      line-height: 1.3;
+      font-weight: 600;
+      color: #ffffff;
+      word-break: break-word;
+      transition: 0.35s;
+      margin: 0 10px;
+      background: #000000cc;
+      padding: 10px 0;
+      border-radius: 5px;
+    }
+  }
+  .w-info2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: center;
+    height: 100%;
+    border-radius: 10px;
+    min-height: 320px;
+    color: #fff;
+    padding-bottom: 20px;
+    .icon-sec {
+      display: block;
+      flex-grow: 1;
+      margin: 75px auto 25px auto;
+      width: 90px;
+      transition: 0.35s;
+      color: #fff;
+    }
+    .text-sec {
+      display: block;
+      font-size: 30px;
+      line-height: 1.3;
+      font-weight: 600;
+      color: #ffffff;
+      word-break: break-word;
+      transition: 0.35s;
+      padding: 30px 0;
+    }
+  }
+  &.mast-single-student {
+    background-image: url(../assets/img/single-student.jpg);
+  }
+  &.mast-special-training {
+    background-image: url(../assets/img/special-trainings.jpg);
+  }
+  &.mast-summer-workshops {
+    background-image: url(../assets/img/summer-workshop.jpg);
+  }
+  &.mast-students {
+    background-image: url(../assets/img/students.jpg);
+  }
+  &.mast-kids-students {
+    background-image: url(../assets/img/kids-students.jpg);
+  }
+  &.mast-single-kid-student {
+    background-image: url(../assets/img/single-kid-student.jpg);
+  }
+
+  .icon-sec {
+    font-size: 80px;
+  }
+}
+.widget-icon {
+  font-size: 90px;
+}

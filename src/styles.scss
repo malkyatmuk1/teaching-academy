@@ -2,8 +2,9 @@
 @import '/node_modules/bootstrap/scss/bootstrap-grid';
 @import '/node_modules/bootstrap/scss/bootstrap';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import 'styles/big-buttons';
 
-body{
+body {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -14,4 +15,17 @@ body{
 
 i {
   margin-right: 10px;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.page-container {
+  background-image: url("https://www.transparenttextures.com/patterns/dark-brick-wall.png");
+  min-height: calc(100vh - 65px);
 }
