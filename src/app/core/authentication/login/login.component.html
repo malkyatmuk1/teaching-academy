@@ -6,14 +6,14 @@
           <h2 style="color: #1d3557;">Добре дошли,</h2>
           <label>
             <span>Имейл</span>
-            <input class="form-control" type="email" />
+            <input class="form-control" [(ngModel)]="loginModel.email" type="email" />
           </label>
           <label>
             <span>Парола</span>
-            <input class="form-control" type="password" />
+            <input class="form-control" [(ngModel)]="loginModel.password" type="password" />
           </label>
           <p class="forgot-pass">Забравена парола?</p>
-          <button type="button" class="submit">Вход</button>
+          <button type="button" class="submit" (click)="logIn()">Вход</button>
         </div>
         <div class="sub-cont">
           <div class="img">

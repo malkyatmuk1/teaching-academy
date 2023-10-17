@@ -7,7 +7,8 @@ import { StorageService } from "../../services/storage.service";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
+  providers: [StorageService]
 })
 export class LoginComponent {
 
@@ -18,7 +19,7 @@ export class LoginComponent {
   isSignUp = false;
 
   loginModel: LogInCredentials = {
-    'userName': '',
+    'email': '',
     'password': ''
   };
 
@@ -27,16 +28,14 @@ export class LoginComponent {
     this.authService.login(data).subscribe(resp => {
       const response = JSON.parse(resp);
       this.logUserIntoTheSystem(response);
-    }, () => {
-      // this.notifications.Error.emit('WrongUsernameOrPassword');
     });
   }
 
   logUserIntoTheSystem(userData: UserSuccessfullLogInCredentials) {
-    // this.notifications.Success.emit('SuccessfullyLoggedIntoAccount');
-    localStorage.setItem('userId', userData.userId);
-    this.setToken(userData.token);
-    this.setTokenExpirationTime();
+    localStorage.setItem('userId', (userData.userId || ''));
+    this.setToken(userData.access_token);
+    this.setRefreshToken(userData.refresh_token);
+    this.router.navigate(['']);
   }
 
   setToken(token: string) {
@@ -44,13 +43,8 @@ export class LoginComponent {
     this.storageService.Token.emit(token);
   }
 
-  setTokenExpirationTime() {
-    // this.authService.getExpirationMinutes().subscribe(resp => {
-    //   localStorage.setItem('expireTime', moment(Date.now()).add(resp, 'm').valueOf()
-    //     .toString());
-    // }, () => {
-    //   // this.errorService.processError(error);
-    // });
+  setRefreshToken(refreshToken: string) {
+    console.log('RefreshToken', refreshToken);
   }
 
 }

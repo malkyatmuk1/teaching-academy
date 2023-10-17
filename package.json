@@ -4,6 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start_via_ip": "ng serve --proxy-config proxy_via_ip.config.json --port 4200 -c development",
+    "start_local": "ng serve --proxy-config proxy_via_localhost.config.json --port 4200 -c development",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"

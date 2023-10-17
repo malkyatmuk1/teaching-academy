@@ -1,9 +1,10 @@
 export interface LogInCredentials {
-  userName: string;
+  email: string;
   password: string;
 }
 
 export interface UserSuccessfullLogInCredentials {
-  token: string;
-  userId: string;
+  access_token: string;
+  refresh_token: string;
+  userId?: string;
 }
