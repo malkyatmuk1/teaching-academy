@@ -16,6 +16,8 @@ export class HeaderComponent implements OnInit{
     private titleDom: Title
   ) { }
 
+  collapseMenu = true;
+
   ngOnInit() {
     this.subscribeToChangesInPage();
   }

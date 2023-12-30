@@ -5,16 +5,19 @@
     <img src="../../../../assets/logo.png" alt="Експонента" style="height: 35px">
   </a>
 
-  <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button"
+          (click)="collapseMenu = !collapseMenu">
     <fa-icon [icon]="['fas', 'bars']"></fa-icon>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="navbar-collapse" id="navbarSupportedContent"
+       [ngClass]="{'collapse': collapseMenu}">
     <ul class="navbar-nav ms-auto">
 <!--      <div class="hori-selector"><div class="left"></div><div class="right"></div></div>-->
       <li class="nav-item"
           routerLinkActive="active"
-          routerLink="services">
+          routerLink="services"
+          (click)="collapseMenu = true;">
         <a class="nav-link" href="javascript:void(0);">
           <fa-icon [icon]="['fas', 'shapes']" [class]="'me-1'"></fa-icon>
           Услуги
@@ -22,7 +25,8 @@
       </li>
       <li class="nav-item"
           routerLinkActive="active"
-          routerLink="learning-materials">
+          routerLink="learning-materials"
+          (click)="collapseMenu = true;">
         <a class="nav-link" href="javascript:void(0);">
           <fa-icon [icon]="['fas', 'book-open-reader']" [class]="'me-1'"></fa-icon>
           Учебни материали
@@ -30,7 +34,8 @@
       </li>
       <li class="nav-item"
           routerLinkActive="active"
-          routerLink="online-learning">
+          routerLink="online-learning"
+          (click)="collapseMenu = true;">
         <a class="nav-link" href="javascript:void(0);">
           <fa-icon [icon]="['fas', 'chalkboard-user']" [class]="'me-1'"></fa-icon>
           Онлайн обучение
@@ -38,7 +43,8 @@
       </li>
       <li class="nav-item"
           routerLinkActive="active"
-          routerLink="about-us">
+          routerLink="about-us"
+          (click)="collapseMenu = true;">
         <a class="nav-link" href="javascript:void(0);">
           <fa-icon [icon]="['fas', 'people-group']" [class]="'me-1'"></fa-icon>
           За нас

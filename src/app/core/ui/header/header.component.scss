@@ -17,7 +17,7 @@
   width: 100%;
   height: 100%;
   opacity: 0.6;
-  background-image: url(http://www.transparenttextures.com/patterns/cream-pixels.png);
+  //background-image: url(http://www.transparenttextures.com/patterns/cream-pixels.png);
 }
 
 #navbarSupportedContent{
@@ -134,7 +134,13 @@
     flex-direction: row-reverse;
   }
 }
-
+.navbar-toggler {
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+  margin-right: 15px;
+  z-index: 5000;
+}
 
 @media (max-width: 991px){
   #navbarSupportedContent ul li a{
