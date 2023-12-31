@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95209513-e164-442e-9f53-78c76b0777e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/services/services.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/services/services.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/services/services.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/services/services.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/styles.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +44,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "W:\\Private\\teaching-academy\\Frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -70,7 +76,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703949551371</updated>
-      <workItem from="1703949555681" duration="2573000" />
+      <workItem from="1703949555681" duration="7315000" />
     </task>
     <task id="LOCAL-00001" summary="Restructure - Move files to new folders">
       <option name="closed" value="true" />
@@ -88,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703957264423</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Update Angular">
+      <option name="closed" value="true" />
+      <created>1703958457293</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703958457293</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +111,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Restructure - Move files to new folders" />
     <MESSAGE value="Update libraries" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update libraries" />
+    <MESSAGE value="Update Angular" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Angular" />
   </component>
 </project>

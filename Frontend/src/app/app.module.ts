@@ -21,6 +21,9 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { far } from "@fortawesome/free-regular-svg-icons";
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {TabViewModule} from "primeng/tabview";
+import {ButtonModule} from "primeng/button";
 
 @NgModule({
   declarations: [
@@ -41,10 +44,13 @@ import {HttpClientModule} from "@angular/common/http";
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     FormsModule,
     AppRoutingModule,
     FontAwesomeModule,
-    HttpClientModule
+    HttpClientModule,
+    TabViewModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
