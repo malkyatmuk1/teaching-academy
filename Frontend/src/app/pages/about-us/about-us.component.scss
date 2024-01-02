@@ -1,8 +1,0 @@
-.accordion-button:not(.collapsed) {
-  color: #223456;
-  background-color: transparent;
-  box-shadow: none;
-}
-.accordion-button::after {
-  filter: invert(42%) sepia(93%) saturate(1352%) hue-rotate(202deg) brightness(89%) contrast(89%);
-}
