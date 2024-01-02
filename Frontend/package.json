@@ -7,6 +7,7 @@
     "start_via_ip": "ng serve --proxy-config proxy_via_ip.config.json --port 4200 -c development",
     "start_local": "ng serve --proxy-config proxy_via_localhost.config.json --port 4200 -c development",
     "build": "ng build",
+    "build_gp": "ng build --base-href https://malkyatmuk1.github.io/teaching-academy/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
