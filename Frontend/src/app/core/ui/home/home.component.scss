@@ -11,12 +11,11 @@
 }
 section {
   width: 100%;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
-  scroll-snap-align: start;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 .block-element {
   display: block;
@@ -43,7 +42,7 @@ section {
 }
 
 .header {
-  background: #457B9D;
+  background: #1E1E1C;
   padding: 58px 0 148px 0;
   background-image: url(../../../../assets/img/bg-image-min.jpg);
   background-size: cover;
@@ -118,7 +117,7 @@ section {
 .services .wrapper {
   text-align: center;
   margin: 0 auto;
-  padding-top: 120px;
+  padding-top: 50px;
 }
 .sub-heading {
   display: block;
@@ -136,9 +135,7 @@ section {
   width: 100%;
 }
 .service-info {
-  min-height: 200px;
   padding: 25px 25px 0 25px;
-  margin-bottom: 127px;
 }
 .service-heading {
   font-size: 24px;
@@ -163,7 +160,7 @@ section {
   color: #3c4761;
 }
 .subheadding {
-  margin-bottom: 80px;
+  margin-bottom: 40px;
   color: #3c4761;
 }
 .team-members {
@@ -185,37 +182,14 @@ section {
   line-height: 24px;
   margin-bottom: 35px;
 }
-//.face-facebook {
-//  background: url(./assets/img/facebook.png);
-//  display: inline-block;
-//  padding: 16px;
-//  margin: 6px;
-//}
-//.face-twitter {
-//  background: url(./assets/img/twitter.png);
-//  display: inline-block;
-//  padding: 16px;
-//  margin: 6px;
-//}
-//.face-linkedin {
-//  background: url(./assets/img/linkedin.png);
-//  display: inline-block;
-//  padding: 16px;
-//  margin: 6px;
-//}
-//.face-mail {
-//  background: url(./assets/img/mail.png);
-//  display: inline-block;
-//  padding: 16px;
-//  margin: 6px;
-//}
-/*главни букви при започване на css class не е готино*/
-.Base {
+
+.img-base {
   display: inline-block;
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  margin-bottom: 42px;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 .photo-star {
   width: 100%;
@@ -429,4 +403,68 @@ section {
   text-align: center;
   width: 14.2%;
   float: left;
+}
+
+@media(min-width: 992px) {
+  section {
+    height: calc(100vh - 65px);
+    gap: 50px;
+    scroll-snap-align: start;
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+}
+
+@media(max-width: 992px) {
+  .heading-cta {
+    font-size: 38px;
+  }
+
+  .first-heading {
+    font-size: 36px;
+  }
+
+  .second-heading {
+    font-size: 18px
+  }
+
+  .main-button {
+    zoom: 0.9;
+  }
+}
+
+@media(max-width: 768px) {
+  .heading-cta {
+    font-size: 32px;
+  }
+
+  .first-heading {
+    font-size: 30px;
+  }
+
+  .second-heading {
+    font-size: 16px
+  }
+
+  .main-button {
+    zoom: 0.8;
+  }
+}
+
+@media(max-width: 576px) {
+  .heading-cta {
+    font-size: 28px;
+  }
+
+  .first-heading {
+    font-size: 26px;
+  }
+
+  .second-heading {
+    font-size: 14px
+  }
+
+  .main-button {
+    zoom: 0.7;
+  }
 }

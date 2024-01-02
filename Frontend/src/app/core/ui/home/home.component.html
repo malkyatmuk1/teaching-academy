@@ -22,7 +22,7 @@
         С избор от индивидуално или курсово, офлайн или онлайн!
       </h3>
       <div class="row p-5 clearfix">
-        <div class="col-3 float-left service-cols">
+        <div class="col-lg-3 col-md-6 col-sm-12 float-left service-cols">
           <div class="service-image">
             <img src="./assets/img/kids-students.jpg">
           </div>
@@ -31,7 +31,7 @@
             <p class="service-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.</p>
           </div>
         </div>
-        <div class="col-3 float-left service-cols">
+        <div class="col-lg-3 col-md-6 col-sm-12 float-left service-cols">
           <div class="service-image">
             <img src="./assets/img/students.jpg">
           </div>
@@ -40,7 +40,7 @@
             <p class="service-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem.</p>
           </div>
         </div>
-        <div class="col-3 float-left service-cols">
+        <div class="col-lg-3 col-md-6 col-sm-12 float-left service-cols">
           <div class="service-image">
             <img src="./assets/img/single-kid-student.jpg">
           </div>
@@ -49,7 +49,7 @@
             <p class="service-text">At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
           </div>
         </div>
-        <div class="col-3 float-left service-cols">
+        <div class="col-lg-3 col-md-6 col-sm-12 float-left service-cols">
           <div class="service-image">
             <img src="./assets/img/single-student.jpg">
           </div>
@@ -59,20 +59,30 @@
           </div>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-12 mb-5">
+          <a href="javascript:void(0);"
+             class="main-button orrange-button animate__animated animate__fadeIn"
+             [routerLink]="['../services']">
+            Виж всички услуги
+          </a>
+        </div>
+      </div>
     </div>
   </section>
 
   <!--********************************-->
   <section class="team-section" id="about">
     <div class="wrapper col-12 clearfix">
-      <h2 class="team-headding first-heading line">Запознайте се с нашия прекрасен екип</h2>
+      <h2 class="section-heading first-heading line">Запознайте се с нашия прекрасен екип</h2>
       <div class="divider">
       </div>
-      <h3 class="subheadding second-heading first-heading">
+      <h3 class="subheadding second-heading">
         Ние сме малък екип от преподаватели, като сме тук за да научите нови знания и да си вземете изпитите. ;)
       </h3>
-      <div class="team-members col-4 float-left">
-        <div class="Base"><img src="./assets/img/Anne.jpg" class="photo-star"></div>
+      <div class="team-members col-md-4 col-sm-12 float-left">
+        <div class="img-base"><img src="./assets/img/Anne.jpg" class="photo-star"></div>
         <h3 class="name-star">Ива Йончева-Найденова</h3>
         <p class="blue-text">CEO / Marketing Guru</p>
         <p class="member-info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
@@ -83,8 +93,8 @@
           <a href="javascript:;" class="face-mail"></a>
         </div>
       </div>
-      <div class="team-members col-4 float-left">
-        <div class="Base"><img src="./assets/img/Kate.jpg" class="photo-star"></div>
+      <div class="team-members col-md-4 col-sm-12 float-left">
+        <div class="img-base"><img src="./assets/img/Kate.jpg" class="photo-star"></div>
         <h3 class="name-star">KATE UPTON</h3>
         <p class="blue-text">Creative Director</p>
         <p class="member-info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
@@ -94,8 +104,8 @@
           <a href="javascript:;" class="face-mail"></a>
         </div>
       </div>
-      <div class="team-members col-4 float-left">
-        <div class="Base"><img src="./assets/img/Olivia.jpg" class="photo-star"></div>
+      <div class="team-members col-md-4 col-sm-12 float-left">
+        <div class="img-base"><img src="./assets/img/Olivia.jpg" class="photo-star"></div>
         <h3 class="name-star">OLIVIA WILDE</h3>
         <p class="blue-text">Lead Designer</p>
         <p class="member-info">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
@@ -106,6 +116,17 @@
           <a href="javascript:;" class="face-mail"></a>
         </div>
       </div>
+
+      <div class="row">
+        <div class="col-12 mt-5 mb-5">
+          <a href="javascript:void(0);"
+             class="main-button orrange-button animate__animated animate__fadeIn"
+             [routerLink]="['../about-us']">
+            Виж повече за нас
+          </a>
+        </div>
+      </div>
+
     </div>
   </section>
 
