@@ -14,7 +14,6 @@ $darkAccentLighter: rgb(73,89,110);
 
 .hero-body {
   .title {
-    font-family: 'Montserrat', sans-serif;
     font-weight: 300 !important;
     font-size: 4rem !important;
     letter-spacing: 15px;
@@ -46,15 +45,15 @@ $darkAccentLighter: rgb(73,89,110);
 }
 
 .fade.fadeOne {
-  animation-delay: 1.7s;
+  animation-delay: 1s;
 }
 
 .fade.fadeTwo {
-  animation-delay: 2.2s;
+  animation-delay: 1.5s;
 }
 
 .fade.fadeThree {
-  animation-delay: 4.2s;
+  animation-delay: 3.2s;
   span {
     font-size: .8rem;
   }

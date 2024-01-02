@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95209513-e164-442e-9f53-78c76b0777e3" name="Changes" comment="Documents moved to Docs folder">
+    <list default="true" id="95209513-e164-442e-9f53-78c76b0777e3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/learning-materials/learning-materials.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/learning-materials/learning-materials.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/learning-materials/learning-materials.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/learning-materials/learning-materials.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/online-learning/online-learning.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/online-learning/online-learning.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/src/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/about-us/about-us.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/about-us/about-us.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/about-us/about-us.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/about-us/about-us.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/coming-soon/coming-soon.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/coming-soon/coming-soon.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/src/app/pages/services/services.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/src/app/pages/services/services.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703949551371</updated>
-      <workItem from="1703949555681" duration="10478000" />
+      <workItem from="1703949555681" duration="11835000" />
     </task>
     <task id="LOCAL-00001" summary="Restructure - Move files to new folders">
       <option name="closed" value="true" />
@@ -117,7 +114,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704016858196</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Coming soon page added">
+      <option name="closed" value="true" />
+      <created>1704022704809</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704022704809</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +134,7 @@
     <MESSAGE value="Update Angular" />
     <MESSAGE value="Added primeng" />
     <MESSAGE value="Documents moved to Docs folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="Documents moved to Docs folder" />
+    <MESSAGE value="Coming soon page added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Coming soon page added" />
   </component>
 </project>
