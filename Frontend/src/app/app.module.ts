@@ -24,6 +24,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {TabViewModule} from "primeng/tabview";
 import {ButtonModule} from "primeng/button";
+import { TreeModule } from 'primeng/tree';
+import {ComingSoonComponent} from "./pages/coming-soon/coming-soon.component";
 
 @NgModule({
   declarations: [
@@ -40,7 +42,8 @@ import {ButtonModule} from "primeng/button";
     AboutUsComponent,
     LearningMaterialsComponent,
     ServicesComponent,
-    OnlineLearningComponent
+    OnlineLearningComponent,
+    ComingSoonComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +53,8 @@ import {ButtonModule} from "primeng/button";
     FontAwesomeModule,
     HttpClientModule,
     TabViewModule,
-    ButtonModule
+    ButtonModule,
+    TreeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
