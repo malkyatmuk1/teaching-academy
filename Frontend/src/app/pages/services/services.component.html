@@ -1,172 +1,249 @@
-<div class="container">
-  <div class="row">
+<div class="container my-5">
+  <div class="row justify-content-center">
 
-    <div class="col-12">
-      <p-tabView styleClass="tabview-custom" [(activeIndex)]="openedTab" [scrollable]="true">
-
-        <p-tabPanel>
-          <ng-template pTemplate="header">
-            <i class="pi pi-calendar"></i>
-            <span>Всички</span>
-          </ng-template>
-
-          <div class="row justify-content-center">
-
-            <div class="col-12 mt-5 text-center">
-              <h2 class="font-weight-bold animate__animated animate__fadeInDown">Услуги</h2>
-              <hr class="animate__animated animate__fadeInUp" />
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">
-              <div class="mast-widget mast-kids-students cursor-pointer" (click)="openedTab = 1">
-                <div class="w-info">
-                  <div class="icon-sec">
-                    <i class="fa fa-clock-o"></i>
-                  </div>
-                  <div class="text-sec">Курсове за ученици</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">
-              <div class="mast-widget mast-students cursor-pointer" (click)="openedTab = 2">
-                <div class="w-info">
-                  <div class="icon-sec">
-                    <i class="fa fa-clock-o"></i>
-                  </div>
-                  <div class="text-sec">Курсове за студенти</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">
-              <div class="mast-widget mast-single-kid-student cursor-pointer" (click)="openedTab = 3">
-                <div class="w-info">
-                  <div class="icon-sec">
-                    <i class="fa fa-clock-o"></i>
-                  </div>
-                  <div class="text-sec">Индивидуални уроци за ученици</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">
-              <div class="mast-widget mast-single-student cursor-pointer" (click)="openedTab = 4">
-                <div class="w-info">
-                  <div class="icon-sec">
-                    <i class="fa fa-clock-o"></i>
-                  </div>
-                  <div class="text-sec">Индивидуални уроци за студенти</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">
-              <div class="mast-widget mast-special-training cursor-pointer" (click)="openedTab = 5">
-                <div class="w-info">
-                  <div class="icon-sec">
-                    <i class="fa fa-clock-o"></i>
-                  </div>
-                  <div class="text-sec">Специализирани курсове</div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">
-              <div class="mast-widget mast-summer-workshops cursor-pointer" (click)="openedTab = 6">
-                <div class="w-info">
-                  <div class="icon-sec">
-                    <i class="fa fa-clock-o"></i>
-                  </div>
-                  <div class="text-sec">Лятна занималня</div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-
-        </p-tabPanel>
-
-        <p-tabPanel header="Курсове за ученици">
-          <ng-template pTemplate="header">
-            <span>Курсове за ученици</span>
-          </ng-template>
-          <div class="row">
-            <div class="col-12 mx-auto">
-              <div class="card">
-                <img src="../assets/img/kids-students-min.jpg" class="card-img-top" alt="Курсове за ученици">
-                <div class="card-body">
-                  <h5 class="card-title">Обогатяващи и Интерактивни Курсове</h5>
-                  <p class="card-text">Нашите курсове са специално създадени, за да помогнат на учениците да разширят знанията си и да развият нови умения. Предлагаме разнообразие от предмети, включително математика, езикознание, науки и много други.</p>
-                  <a href="#" class="btn btn-primary">Разгледайте Курсовете</a>
-                </div>
-              </div>
-              <div class="mt-4">
-                <h2 class="text-center">Защо да Изберете Нашите Курсове?</h2>
-                <p>Нашите курсове са разработени от опитни преподаватели и са адаптирани към нуждите на съвременните ученици. Със силно фокусиране върху практическото приложение и интерактивното обучение, ние стремим да предоставим на учениците полезни и запомнящи се учебни преживявания.</p>
-              </div>
-            </div>
-          </div>
-        </p-tabPanel>
-
-        <p-tabPanel header="Курсове за студентиI">
-          <ng-template pTemplate="header">
-            <span>Курсове за студенти</span>
-          </ng-template>
-          <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-          </p>
-        </p-tabPanel>
-
-        <p-tabPanel header="Индивидуални уроци за ученици">
-          <ng-template pTemplate="header">
-            <span>Индивидуални уроци за ученици</span>
-          </ng-template>
-          <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-          </p>
-        </p-tabPanel>
-
-
-        <p-tabPanel header="Индивидуални уроци за студенти">
-          <ng-template pTemplate="header">
-            <span>Индивидуални уроци за студенти</span>
-          </ng-template>
-          <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-          </p>
-        </p-tabPanel>
-
-
-        <p-tabPanel header="Специализирани курсове">
-          <ng-template pTemplate="header">
-            <span>Специализирани курсове</span>
-          </ng-template>
-          <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-          </p>
-        </p-tabPanel>
-
-
-        <p-tabPanel header="Лятна занималня">
-          <ng-template pTemplate="header">
-            <span>Лятна занималня</span>
-          </ng-template>
-          <p>
-            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa
-            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
-          </p>
-        </p-tabPanel>
-
-      </p-tabView>
-
-
-
-
+    <div class="col-12 mt-3 text-center">
+      <h2 class="font-weight-bold animate__animated animate__fadeInDown">Услуги</h2>
+      <hr class="animate__animated animate__fadeInUp" />
     </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">
+      <div class="mast-widget mast-kids-students" (click)="openedTab = 1">
+        <div class="w-info">
+          <div class="icon-sec">
+            <i class="fa fa-clock-o"></i>
+          </div>
+          <div class="text-sec">Курсове за ученици</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">
+      <div class="mast-widget mast-students" (click)="openedTab = 2">
+        <div class="w-info">
+          <div class="icon-sec">
+            <i class="fa fa-clock-o"></i>
+          </div>
+          <div class="text-sec">Курсове за студенти</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">
+      <div class="mast-widget mast-single-kid-student" (click)="openedTab = 3">
+        <div class="w-info">
+          <div class="icon-sec">
+            <i class="fa fa-clock-o"></i>
+          </div>
+          <div class="text-sec">Индивидуални уроци за ученици</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">
+      <div class="mast-widget mast-single-student" (click)="openedTab = 4">
+        <div class="w-info">
+          <div class="icon-sec">
+            <i class="fa fa-clock-o"></i>
+          </div>
+          <div class="text-sec">Индивидуални уроци за студенти</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">
+      <div class="mast-widget mast-special-training" (click)="openedTab = 5">
+        <div class="w-info">
+          <div class="icon-sec">
+            <i class="fa fa-clock-o"></i>
+          </div>
+          <div class="text-sec">Специализирани курсове</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">
+      <div class="mast-widget mast-summer-workshops" (click)="openedTab = 6">
+        <div class="w-info">
+          <div class="icon-sec">
+            <i class="fa fa-clock-o"></i>
+          </div>
+          <div class="text-sec">Лятна занималня</div>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
+
+<!--<div class="container">-->
+<!--  <div class="row">-->
+
+<!--    <div class="col-12">-->
+<!--      <p-tabView styleClass="tabview-custom" [(activeIndex)]="openedTab" [scrollable]="true">-->
+
+<!--        <p-tabPanel>-->
+<!--          <ng-template pTemplate="header">-->
+<!--            <i class="pi pi-calendar"></i>-->
+<!--            <span>Всички</span>-->
+<!--          </ng-template>-->
+
+<!--          <div class="row justify-content-center">-->
+
+<!--            <div class="col-12 mt-5 text-center">-->
+<!--              <h2 class="font-weight-bold animate__animated animate__fadeInDown">Услуги</h2>-->
+<!--              <hr class="animate__animated animate__fadeInUp" />-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">-->
+<!--              <div class="mast-widget mast-kids-students cursor-pointer" (click)="openedTab = 1">-->
+<!--                <div class="w-info">-->
+<!--                  <div class="icon-sec">-->
+<!--                    <i class="fa fa-clock-o"></i>-->
+<!--                  </div>-->
+<!--                  <div class="text-sec">Курсове за ученици</div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">-->
+<!--              <div class="mast-widget mast-students cursor-pointer" (click)="openedTab = 2">-->
+<!--                <div class="w-info">-->
+<!--                  <div class="icon-sec">-->
+<!--                    <i class="fa fa-clock-o"></i>-->
+<!--                  </div>-->
+<!--                  <div class="text-sec">Курсове за студенти</div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">-->
+<!--              <div class="mast-widget mast-single-kid-student cursor-pointer" (click)="openedTab = 3">-->
+<!--                <div class="w-info">-->
+<!--                  <div class="icon-sec">-->
+<!--                    <i class="fa fa-clock-o"></i>-->
+<!--                  </div>-->
+<!--                  <div class="text-sec">Индивидуални уроци за ученици</div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">-->
+<!--              <div class="mast-widget mast-single-student cursor-pointer" (click)="openedTab = 4">-->
+<!--                <div class="w-info">-->
+<!--                  <div class="icon-sec">-->
+<!--                    <i class="fa fa-clock-o"></i>-->
+<!--                  </div>-->
+<!--                  <div class="text-sec">Индивидуални уроци за студенти</div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">-->
+<!--              <div class="mast-widget mast-special-training cursor-pointer" (click)="openedTab = 5">-->
+<!--                <div class="w-info">-->
+<!--                  <div class="icon-sec">-->
+<!--                    <i class="fa fa-clock-o"></i>-->
+<!--                  </div>-->
+<!--                  <div class="text-sec">Специализирани курсове</div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--            <div class="col-lg-3 col-md-4 col-sm-6 text-center col-item animate__animated animate__pulse">-->
+<!--              <div class="mast-widget mast-summer-workshops cursor-pointer" (click)="openedTab = 6">-->
+<!--                <div class="w-info">-->
+<!--                  <div class="icon-sec">-->
+<!--                    <i class="fa fa-clock-o"></i>-->
+<!--                  </div>-->
+<!--                  <div class="text-sec">Лятна занималня</div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+
+<!--          </div>-->
+
+<!--        </p-tabPanel>-->
+
+<!--        <p-tabPanel header="Курсове за ученици">-->
+<!--          <ng-template pTemplate="header">-->
+<!--            <span>Курсове за ученици</span>-->
+<!--          </ng-template>-->
+<!--          <div class="row">-->
+<!--            <div class="col-12 mx-auto">-->
+<!--              <div class="card">-->
+<!--                <img src="../assets/img/kids-students-min.jpg" class="card-img-top" alt="Курсове за ученици">-->
+<!--                <div class="card-body">-->
+<!--                  <h5 class="card-title">Обогатяващи и Интерактивни Курсове</h5>-->
+<!--                  <p class="card-text">Нашите курсове са специално създадени, за да помогнат на учениците да разширят знанията си и да развият нови умения. Предлагаме разнообразие от предмети, включително математика, езикознание, науки и много други.</p>-->
+<!--                  <a href="#" class="btn btn-primary">Разгледайте Курсовете</a>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="mt-4">-->
+<!--                <h2 class="text-center">Защо да Изберете Нашите Курсове?</h2>-->
+<!--                <p>Нашите курсове са разработени от опитни преподаватели и са адаптирани към нуждите на съвременните ученици. Със силно фокусиране върху практическото приложение и интерактивното обучение, ние стремим да предоставим на учениците полезни и запомнящи се учебни преживявания.</p>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </p-tabPanel>-->
+
+<!--        <p-tabPanel header="Курсове за студентиI">-->
+<!--          <ng-template pTemplate="header">-->
+<!--            <span>Курсове за студенти</span>-->
+<!--          </ng-template>-->
+<!--          <p>-->
+<!--            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa-->
+<!--            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.-->
+<!--          </p>-->
+<!--        </p-tabPanel>-->
+
+<!--        <p-tabPanel header="Индивидуални уроци за ученици">-->
+<!--          <ng-template pTemplate="header">-->
+<!--            <span>Индивидуални уроци за ученици</span>-->
+<!--          </ng-template>-->
+<!--          <p>-->
+<!--            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa-->
+<!--            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.-->
+<!--          </p>-->
+<!--        </p-tabPanel>-->
+
+
+<!--        <p-tabPanel header="Индивидуални уроци за студенти">-->
+<!--          <ng-template pTemplate="header">-->
+<!--            <span>Индивидуални уроци за студенти</span>-->
+<!--          </ng-template>-->
+<!--          <p>-->
+<!--            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa-->
+<!--            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.-->
+<!--          </p>-->
+<!--        </p-tabPanel>-->
+
+
+<!--        <p-tabPanel header="Специализирани курсове">-->
+<!--          <ng-template pTemplate="header">-->
+<!--            <span>Специализирани курсове</span>-->
+<!--          </ng-template>-->
+<!--          <p>-->
+<!--            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa-->
+<!--            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.-->
+<!--          </p>-->
+<!--        </p-tabPanel>-->
+
+
+<!--        <p-tabPanel header="Лятна занималня">-->
+<!--          <ng-template pTemplate="header">-->
+<!--            <span>Лятна занималня</span>-->
+<!--          </ng-template>-->
+<!--          <p>-->
+<!--            At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa-->
+<!--            qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.-->
+<!--          </p>-->
+<!--        </p-tabPanel>-->
+
+<!--      </p-tabView>-->
+
+
+
+
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->

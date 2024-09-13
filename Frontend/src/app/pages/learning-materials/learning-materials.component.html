@@ -1,10 +1,20 @@
-<div class="container">
+<div class="container my-5">
   <div class="row">
-
+    <div class="col-12 mt-3">
+      <h2 class="section-heading first-heading line text-center animate__animated animate__fadeInDown">Учебни материали</h2>
+      <hr class="animate__animated animate__fadeInUp" />
+      <h5 class="sub-heading second-heading text-center">
+        На всички курсисти са на разположение помощни учебни материали – формули, допълнителни задачи за упражнение,
+        тестове за определяне на напредъка към всеки раздел, варианти със задачи по трудност и учебно съдържание съпоставими с НВО.
+      </h5>
+    </div>
     <div class="col-12 mt-3">
 
       <div class="card flex justify-content-center">
-        <p-tree class="w-full md:w-30rem" [value]="materials"></p-tree>
+        <p-tree class="w-full md:w-30rem"
+                [value]="materials"
+                selectionMode="single"
+                (onNodeSelect)="onFileSelect($event)"></p-tree>
       </div>
 
     </div>
